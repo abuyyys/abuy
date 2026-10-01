@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Edukasi Bahaya Judi Online | TKJ</title>
+
+<style>
+
+.contact-card img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    margin-bottom: 12px;
+    border-radius: 10px;
+}
+
+/* Foto sekolah tetap lebih besar */
+.contact-card.sekolah-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f8fc;
+    color:#17233d;
+    line-height:1.7;
+}
+
+/* NAVBAR */
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#081b35;
+    color:white;
+    padding:15px 6%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-shadow:0 3px 15px rgba(0,0,0,.2);
+}
+
+.logo{
+    font-size:21px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:18px;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+    padding:70px 7%;
+    color:white;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(4,18,38,.96),
+        rgba(8,47,85,.65)
+    ),
+    url("https://img.sanishtech.com/u/00f8efc4f713f7fd53b7b2d0cc667efa.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:750px;
+}
+
+.badge{
+    color:#38bdf8;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.hero h1{
+    font-size:clamp(40px,6vw,70px);
+    line-height:1.05;
+    margin:15px 0 25px;
+}
+
+.hero h1 span{
+    color:#38bdf8;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:680px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:13px 25px;
+    background:#159fe8;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#087bb9;
+}
+
+/* SECTION */
+section{
+    padding:75px 7%;
+}
+
+.container{
+    max-width:1150px;
+    margin:auto;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.title h2{
+    font-size:34px;
+    color:#102d57;
+}
+
+.title p{
+    color:#65758b;
+}
+
+/* TWO COLUMN */
+.two{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+    align-items:center;
+}
+
+.photo{
+    width:100%;
+    border-radius:16px;
+    box-shadow:0 8px 25px rgba(20,45,80,.15);
+}
+
+/* CARD */
+.grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    border:1px solid #e0eaf3;
+    box-shadow:0 8px 25px rgba(20,45,80,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#1455a0;
+    margin-bottom:10px;
+}
+
+.icon{
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+/* WARNING */
+.warning{
+    margin-top:25px;
+    background:#fff0f0;
+    border-left:6px solid #dc3545;
+    padding:22px;
+    border-radius:10px;
+}
+
+/* INFO */
+.info{
+    margin-top:25px;
+    background:#e8f6ff;
+    border-left:6px solid #149ee5;
+    padding:22px;
+    border-radius:10px;
+}
+
+/* STEPS */
+.steps{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(210px,1fr));
+    gap:20px;
+}
+
+.step{
+    background:white;
+    padding:25px;
+    border-radius:14px;
+    border:1px solid #dfeaf4;
+    position:relative;
+}
+
+.step-number{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#1264ae;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+/* PREVENTION */
+.pencegahan{
+    background:#eaf6ff;
+}
+
+ol{
+    padding-left:25px;
+}
+
+ol li{
+    margin-bottom:14px;
+}
+
+/* TKJ */
+.tkj{
+    background:#081f3d;
+    color:white;
+}
+
+.tkj .title h2{
+    color:white;
+}
+
+.tkj .title p{
+    color:#c7d8eb;
+}
+
+.tkj .card{
+    color:#17233d;
+}
+
+/* PROFILE */
+.profile{
+    background:white;
+    max-width:700px;
+    margin:auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(20,45,80,.1);
+}
+
+.profile p{
+    margin:8px 0;
+}
+
+/* CONTACT */
+.contact{
+    background:#eaf6ff;
+}
+
+.contact a{
+    color:#0874b9;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+    background:#041329;
+    color:#cbd8e8;
+    text-align:center;
+    padding:30px;
+}
+
+.small{
+    font-size:14px;
+    color:#75859b;
+}
+
+/* MOBILE */
+@media(max-width:800px){
+
+    header{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .hero{
+        min-height:75vh;
+        padding:55px 6%;
+    }
+
+    .two{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:55px 6%;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <div class="logo">
+        🛡️ Edu<span>kasi Digital</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#pengertian">Pengertian</a>
+        <a href="#cara">Cara Kerja</a>
+        <a href="#dampak">Dampak</a>
+        <a href="#pencegahan">Pencegahan</a>
+        <a href="#tkj">TKJ</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            Website Edukasi Siswa TKJ
+        </div>
+
+        <h1>
+            Kenali
+            <span>Bahaya Judi Online</span>
+        </h1>
+
+        <p>
+            Website ini dibuat untuk memberikan edukasi mengenai
+            pengertian judi online, cara kerjanya, faktor yang dapat
+            membuat seseorang sulit berhenti, serta berbagai dampaknya
+            terhadap kehidupan.
+        </p>
+
+        <a href="#pengertian" class="btn">
+            📖 Pelajari Selengkapnya
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PENGERTIAN ================= -->
+
+<section id="pengertian">
+
+<div class="container">
+
+    <div class="title">
+
+        <h2>
+            1. Apa Itu Judi Online?
+        </h2>
+
+        <p>
+            Mengenal aktivitas perjudian melalui internet
+        </p>
+
+    </div>
+
+
+    <div class="two">
+
+        <div>
+
+            <p>
+                Judi online adalah aktivitas mempertaruhkan uang atau
+                barang melalui internet dengan harapan mendapatkan
+                keuntungan dari hasil permainan atau taruhan.
+            </p>
+
+            <br>
+
+            <p>
+                Bentuk judi online dapat mencakup taruhan olahraga,
+                permainan kasino digital, slot, poker, dan berbagai
+                bentuk taruhan lainnya.
+            </p>
+
+            <br>
+
+            <p>
+                Karena hasil perjudian memiliki unsur ketidakpastian,
+                seseorang dapat kehilangan uang yang telah
+                dipertaruhkan.
+            </p>
+
+
+            <div class="warning">
+
+                <b>⚠️ Peringatan:</b>
+
+                <br>
+
+                Judi online bukan sumber penghasilan yang pasti.
+                Tidak ada metode yang dapat menjamin kemenangan.
+
+            </div>
+
+        </div>
+
+
+        <img
+        class="photo"
+        src="https://img.sanishtech.com/u/f11701f5ed943c357dbf95309587e6f9.jpg"
+        alt="Ilustrasi risiko keuangan">
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CARA KERJA ================= -->
+
+<section id="cara">
+
+<div class="container">
+
+    <div class="title">
+
+        <h2>
+            2. Bagaimana Judi Online Bekerja?
+        </h2>
+
+        <p>
+            Gambaran umum proses perjudian online
+        </p>
+
+    </div>
+
+
+    <div class="steps">
+
+        <div class="step">
+
+            <div class="step-number">
+                1
+            </div>
+
+            <h3>
+                Deposit
+            </h3>
+
+            <p>
+                Pengguna memasukkan uang ke akun atau sistem
+                pembayaran yang tersedia.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">
+                2
+            </div>
+
+            <h3>
+                Memilih Taruhan
+            </h3>
+
+            <p>
+                Pengguna memilih jenis permainan atau taruhan
+                yang tersedia.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">
+                3
+            </div>
+
+            <h3>
+                Proses Sistem
+            </h3>
+
+            <p>
+                Sistem platform memproses permainan dan
+                menentukan hasil.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">
+                4
+            </div>
+
+            <h3>
+                Hasil
+            </h3>
+
+            <p>
+                Pengguna dapat mengalami kemenangan atau
+                kehilangan uang yang dipertaruhkan.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">
+                5
+            </div>
+
+            <h3>
+                Transaksi
+            </h3>
+
+            <p>
+                Platform dapat menyediakan mekanisme transaksi
+                untuk dana pengguna.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="info">
+
+        <b>💡 Hal penting:</b>
+
+        Kekalahan sebelumnya tidak membuat permainan berikutnya
+        pasti menang. Mengejar kerugian justru dapat membuat
+        kerugian semakin besar.
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= KECANDUAN ================= -->
+
+<section>
+
+<div class="container">
+
+    <div class="title">
+
+        <h2>
+            3. Mengapa Judi Online Bisa Menjadi Kebiasaan?
+        </h2>
+
+        <p>
+            Beberapa faktor dapat membuat seseorang terus terdorong
+            untuk bermain.
+        </p>
+
+    </div>
+
+
+    <div class="grid">
+
+
+        <div class="card">
+
+            <div class="icon">
+                🎁
+            </div>
+
+            <h3>
+                Bonus dan Promosi
+            </h3>
+
+            <p>
+                Bonus atau promosi dapat membuat aktivitas terlihat
+                menarik dan mendorong seseorang untuk kembali.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                🔔
+            </div>
+
+            <h3>
+                Notifikasi
+            </h3>
+
+            <p>
+                Promosi dan pemberitahuan yang muncul berulang
+                dapat membuat seseorang kembali membuka platform.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                🧠
+            </div>
+
+            <h3>
+                Mengejar Kerugian
+            </h3>
+
+            <p>
+                Seseorang dapat berpikir bahwa bermain lagi akan
+                mengembalikan uang yang sebelumnya hilang.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                📱
+            </div>
+
+            <h3>
+                Akses Mudah
+            </h3>
+
+            <p>
+                Smartphone dan internet membuat akses terhadap
+                berbagai platform digital menjadi mudah.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= DAMPAK ================= -->
+
+<section id="dampak">
+
+<div class="container">
+
+    <div class="title">
+
+        <h2>
+            4. Dampak Judi Online
+        </h2>
+
+        <p>
+            Dampaknya dapat memengaruhi berbagai bagian kehidupan.
+        </p>
+
+    </div>
+
+
+    <div class="grid">
+
+
+        <!-- KEUANGAN -->
+
+        <div class="card">
+
+            <div class="icon">
+                💰
+            </div>
+
+            <h3>
+                Dampak Keuangan
+            </h3>
+
+            <ul>
+
+                <li>
+                    Kehilangan uang.
+                </li>
+
+                <li>
+                    Tabungan berkurang.
+                </li>
+
+                <li>
+                    Berisiko memiliki utang.
+                </li>
+
+                <li>
+                    Kebutuhan sehari-hari dapat terganggu.
+                </li>
+
+                <li>
+                    Masalah keuangan keluarga.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- PSIKOLOGIS -->
+
+        <div class="card">
+
+            <div class="icon">
+                🧠
+            </div>
+
+            <h3>
+                Dampak Psikologis
+            </h3>
+
+            <ul>
+
+                <li>
+                    Stres.
+                </li>
+
+                <li>
+                    Rasa cemas.
+                </li>
+
+                <li>
+                    Rasa bersalah setelah mengalami kekalahan.
+                </li>
+
+                <li>
+                    Sulit berkonsentrasi.
+                </li>
+
+                <li>
+                    Terus memikirkan permainan.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- SOSIAL -->
+
+        <div class="card">
+
+            <div class="icon">
+                👨‍👩‍👧
+            </div>
+
+            <h3>
+                Dampak Sosial
+            </h3>
+
+            <ul>
+
+                <li>
+                    Konflik dengan keluarga.
+                </li>
+
+                <li>
+                    Kepercayaan orang lain dapat berkurang.
+                </li>
+
+                <li>
+                    Mengabaikan teman.
+                </li>
+
+                <li>
+                    Hubungan dengan orang terdekat terganggu.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- PELAJAR -->
+
+        <div class="card">
+
+            <div class="icon">
+                🎓
+            </div>
+
+            <h3>
+                Dampak bagi Pelajar
+            </h3>
+
+            <ul>
+
+                <li>
+                    Waktu belajar berkurang.
+                </li>
+
+                <li>
+                    Konsentrasi belajar terganggu.
+                </li>
+
+                <li>
+                    Uang saku dapat habis.
+                </li>
+
+                <li>
+                    Prestasi sekolah dapat terganggu.
+                </li>
+
+                <li>
+                    Sulit mengatur waktu.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- TEKNOLOGI -->
+
+        <div class="card">
+
+            <div class="icon">
+                💻
+            </div>
+
+            <h3>
+                Dampak Teknologi
+            </h3>
+
+            <p>
+                Internet dan perangkat digital dapat disalahgunakan
+                untuk aktivitas yang merugikan. Karena itu,
+                keterampilan digital perlu digunakan secara
+                bertanggung jawab.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PENCEGAHAN ================= -->
+
+<section class="pencegahan" id="pencegahan">
+
+<div class="container">
+
+    <div class="title">
+
+        <h2>
+            5. Cara Menghindari Judi Online
+        </h2>
+
+        <p>
+            Gunakan internet dengan bijak dan bertanggung jawab.
+        </p>
+
+    </div>
+
+
+    <div class="two">
+
+
+        <img
+        class="photo"
+        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80"
+        alt="Pelajar menggunakan teknologi secara positif">
+
+
+        <div>
+
+            <ol>
+
+                <li>
+                    <b>Jangan mencoba karena penasaran.</b>
+                    Rasa penasaran dapat menjadi awal kebiasaan.
+                </li>
+
+                <li>
+                    <b>Hindari situs dan promosi perjudian.</b>
+                    Jangan membuka tautan yang mencurigakan.
+                </li>
+
+                <li>
+                    <b>Jangan percaya keuntungan instan.</b>
+                    Tidak ada cara yang menjamin kemenangan.
+                </li>
+
+                <li>
+                    <b>Kelola uang dengan baik.</b>
+                    Prioritaskan kebutuhan dan pendidikan.
+                </li>
+
+                <li>
+                    <b>Isi waktu dengan kegiatan positif.</b>
+                    Misalnya olahraga, belajar, organisasi,
+                    atau membuat proyek TKJ.
+                </li>
+
+                <li>
+                    <b>Minta bantuan.</b>
+                    Jika sudah sulit berhenti, bicarakan dengan
+                    orang tua, guru, konselor, atau orang dewasa
+                    yang dipercaya.
+                </li>
+
+            </ol>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= TKJ ================= -->
+
+<section class="tkj" id="tkj">
+
+<div class="container">
+
+    <div class="title">
+
+        <h2>
+            6. Gunakan Teknologi untuk Hal Positif
+        </h2>
+
+        <p>
+            Sebagai siswa TKJ, banyak hal bermanfaat yang dapat dipelajari.
+        </p>
+
+    </div>
+
+
+    <div class="grid">
+
+
+        <div class="card">
+
+            <div class="icon">
+                🌐
+            </div>
+
+            <h3>
+                Jaringan Komputer
+            </h3>
+
+            <p>
+                Belajar konfigurasi switch, router, VLAN,
+                IP address, dan topologi jaringan.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                🖥️
+            </div>
+
+            <h3>
+                Membuat Website
+            </h3>
+
+            <p>
+                Gunakan HTML, CSS, dan JavaScript untuk
+                membuat karya digital yang bermanfaat.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                🔐
+            </div>
+
+            <h3>
+                Keamanan Siber
+            </h3>
+
+            <p>
+                Pelajari keamanan akun, password, jaringan,
+                dan cara mengenali ancaman digital.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                ⚙️
+            </div>
+
+            <h3>
+                Server
+            </h3>
+
+            <p>
+                Pelajari DNS, web server, Linux, dan layanan
+                jaringan melalui praktik yang aman.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<section id="tentang">
+
+<div class="container">
+
+    <div class="title">
+
+        <h2>
+            7. Tentang Saya
+        </h2>
+
+        <p>
+            Profil pembuat website
+        </p>
+
+    </div>
+
+
+    <div class="profile">
+
+        <h2>
+            👨‍💻 Profil Siswa
+        </h2>
+
+        <br>
+
+        <p>
+            <b>Nama:</b>
+            Rifqi Raziq Alafath
+        </p>
+
+        <p>
+            <b>Kelas:</b>
+            11 TKJ 1
+        </p>
+
+        <p>
+            <b>Sekolah:</b>
+            SMKN 9 Kabupaten Tangerang
+        </p>
+
+        <p>
+            <b>Jurusan:</b>
+            Teknik Komputer dan Jaringan
+        </p>
+
+        <br>
+
+        <p>
+            <i>
+                "Gunakan teknologi untuk belajar, berkarya,
+                dan membangun masa depan."
+            </i>
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= KONTAK ================= -->
+
+<section class="contact" id="kontak">
+
+<div class="container">
+
+<div class="title">
+    <h2>8. Hubungi Saya</h2>
+    <p>
+        Silakan hubungi saya melalui media sosial dan kontak berikut.
+    </p>
+</div>
+
+<div class="contact-grid">
+
+    <!-- WHATSAPP -->
+    <div class="contact-card">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Logo WhatsApp">
+
+        <h3>WhatsApp</h3>
+
+        <p>
+            Hubungi saya secara langsung melalui WhatsApp.
+        </p>
+
+        <a href="https://wa.me/6283162097550" target="_blank" class="contact-btn whatsapp">
+            💬 Chat WhatsApp
+        </a>
+
+    <!-- INSTAGRAM -->
+    <div class="contact-card">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Logo Instagram">
+
+        <h3>Instagram</h3>
+
+        <p>
+            Kunjungi profil Instagram saya.
+        </p>
+
+        <a href="https://www.instagram.com/bonn__000/" target="_blank" class="contact-btn instagram">
+            📸 Buka Instagram
+        </a>
+
+    </div>
+
+    <!-- EMAIL -->
+    <div class="contact-card">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Logo Email">
+
+        <h3>Email</h3>
+
+        <p>
+            Kirim pesan melalui email kepada saya.
+        </p>
+
+        <a href="mailto:zyyckepep@gmail.com" class="contact-btn email">
+            ✉️ Kirim Email
+        </a>
+
+    </div>
+
+    <!-- SEKOLAH -->
+    <div class="contact-card">
+
+        <img src="https://asset-2.tribunnews.com/wartakota/foto/bank/images/Titip-siswa-di-SMKN-9-kabupaten-Tangerang.jpg" alt="SMKN 9 Kabupaten Tangerang">
+
+        <h3>SMKN 9 Kabupaten Tangerang</h3>
+
+        <p>
+            Sekolah tempat saya belajar sebagai siswa Teknik Komputer dan Jaringan.
+        </p>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=SMKN+9+Kabupaten+Tangerang" target="_blank" class="contact-btn sekolah">
+            📍 Lihat Lokasi
+        </a>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================== FOOTER ================== -->
+
+<footer>
+
+    <h3>
+        🛡️ Edukasi Bahaya Judi Online
+    </h3>
+
+    <p>
+        Website edukasi siswa TKJ
+    </p>
+
+    <br>
+
+    <p class="small">
+        © 2026 Edukasi Digital | Dibuat untuk tugas siswa TKJ
+    </p>
+
+</footer>
+
+</body>
+</html>
